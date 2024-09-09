@@ -45,7 +45,7 @@ const App = () => {
 
   useEffect(() => {
     // Fetch the vehicle location data from the backend
-    fetch("https://vehicle-tracker-backend.onrender.com")
+    fetch("https://vehicle-tracker-backend.onrender.com/api/vehicle-location")
       .then((response) => response.json())
       .then((data) => {
         setVehicleData(data);
